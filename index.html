@@ -1,42 +1,117 @@
 <!DOCTYPE html>
-<html lang="ar">
-<meta name="description" content="PhysioChild مركز متخصص في العلاج الفيزيائي وتأهيل الأطفال والحالات العصبية">
+<html lang="ar" dir="rtl">
+<head>
   <meta charset="UTF-8">
   <title>PhysioChild | Pediatric Physiotherapy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font: Tajawal -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f7fbff;
       margin: 0;
-      direction: rtl;
+      font-family: 'Tajawal', sans-serif;
+      background-color: #F7F9FB;
+      color: #2E2E2E;
+      line-height: 1.8;
     }
+
     header {
-      background: #6ec1e4;
+      background: linear-gradient(135deg, #2FB7C4, #2C7BE5);
       color: white;
-      padding: 30px;
+      padding: 60px 20px;
       text-align: center;
     }
-    section {
-      padding: 30px;
-      max-width: 800px;
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 700px;
       margin: auto;
     }
-    h2 {
-      color: #2c7da0;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-    footer {
-      background: #eef6fb;
-      text-align: center;
+
+    nav {
+      background-color: white;
       padding: 15px;
-      color: #555;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2C7BE5;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #2FB7C4;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2C7BE5;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 30px;
+      background-color: #6BCF9B;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #2E2E2E;
+      color: white;
+      text-align: center;
+      padding: 20px;
       font-size: 14px;
     }
   </style>
@@ -44,40 +119,68 @@
 
 <body>
 
-<header>
-  <h1>PhysioChild</h1>
-  <p>تأهيل الأطفال والعلاج الفيزيائي العصبي</p>
-</header>
-
-<section>
-  <div class="card">
-    <h2>من نحن</h2>
+  <header>
+    <h1>PhysioChild</h1>
     <p>
-      مركز متخصص في العلاج الفيزيائي وتأهيل الأطفال،
-      نعمل بأسلوب علمي وإنساني لدعم تطور الطفل الحركي.
+      رعاية متخصصة في العلاج الفيزيائي للأطفال  
+      لمساعدتهم على الحركة، الاستقلال، وجودة حياة أفضل
     </p>
-  </div>
+  </header>
 
-  <div class="card">
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#services">الخدمات</a>
+    <a href="#about">من نحن</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <section id="services">
     <h2>خدماتنا</h2>
-    <ul>
-      <li>تأهيل الشلل الدماغي</li>
-      <li>التأهيل الحركي بعد نقص الأكسجة</li>
-      <li>تمارين التوازن والمشي</li>
-      <li>التدريب الوظيفي</li>
-    </ul>
-  </div>
+    <div class="services">
+      <div class="card">
+        <h3>الشلل الدماغي</h3>
+        <p>برامج علاجية مخصصة لتحسين التحكم الحركي والاستقلال الوظيفي.</p>
+      </div>
+      <div class="card">
+        <h3>تأخر النمو الحركي</h3>
+        <p>تقييم وتدخل مبكر لدعم تطور الطفل الحركي.</p>
+      </div>
+      <div class="card">
+        <h3>نقص الأكسجة</h3>
+        <p>خطط تأهيل لتحسين القوة والتوازن والوظيفة.</p>
+      </div>
+      <div class="card">
+        <h3>تدريب المشي</h3>
+        <p>برامج متقدمة لتطوير نمط المشي باستخدام وسائل مساعدة.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="card">
+  <section id="about">
+    <h2>من نحن</h2>
+    <div class="about">
+      <p>
+        PhysioChild منصة متخصصة في العلاج الفيزيائي للأطفال،  
+        نؤمن بأن كل طفل يستحق فرصة للحركة بحرية وثقة.
+      </p>
+      <p>
+        نعمل بخطط علاجية علمية، إنسانية، ومبنية على أحدث الممارسات  
+        مع إشراك الأسرة في كل خطوة من رحلة التأهيل.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
     <h2>تواصل معنا</h2>
-    <p>📧 info@physiochild.com</p>
-    <p>📍 سيتم إضافة الموقع لاحقًا</p>
-  </div>
-</section>
+    <div class="contact">
+      <p>للاستفسار أو حجز موعد، يسعدنا تواصلك معنا</p>
+      <a href="mailto:info@physiochild.org">info@physiochild.org</a>
+    </div>
+  </section>
 
-<footer>
-  © 2026 PhysioChild
-</footer>
+  <footer>
+    © 2026 PhysioChild – All Rights Reserved
+  </footer>
 
 </body>
 </html>
