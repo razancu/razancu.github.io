@@ -2,25 +2,218 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>PhysioChild | الرئيسية</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>PhysioChild | العلاج الفيزيائي للأطفال</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background-color: #F7F9FB;
+      color: #2E2E2E;
+      line-height: 1.8;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #2FB7C4;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      color: #2C7BE5;
+      font-weight: 500;
+    }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #2FB7C4, #2C7BE5);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      background-color: #6BCF9B;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #2FB7C4;
+      font-size: 28px;
+      margin-bottom: 50px;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: #2C7BE5;
+      margin-bottom: 12px;
+    }
+
+    /* About preview */
+    .about {
+      background-color: #ffffff;
+      padding: 45px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2E2E2E;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="logo">PhysioChild</div>
-  <ul class="nav-links">
-    <li><a href="index.html">الرئيسية</a></li>
-    <li><a href="services.html">خدماتنا</a></li>
-    <li><a href="about.html">من نحن</a></li>
-    <li><a href="contact.html">تواصل</a></li>
-  </ul>
-</nav>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">PhysioChild</div>
+    <div>
+      <a href="index.html">الرئيسية</a>
+      <a href="services.html">الخدمات</a>
+      <a href="about.html">من نحن</a>
+      <a href="contact.html">تواصل معنا</a>
+    </div>
+  </nav>
 
-<section class="hero">
-  <h1>رعاية متخصصة للأطفال</h1>
-  <p>نساعد طفلك على الحركة والاستقلالية بثقة وأمان</p>
-</section>
+  <!-- Hero -->
+  <header>
+    <h1>العلاج الفيزيائي للأطفال</h1>
+    <p>
+      نرافق طفلك في رحلة الحركة والاستقلال  
+      بخطط علاجية آمنة، علمية، وإنسانية
+    </p>
+
+    <div class="cta">
+      <a href="contact.html">احجز موعد</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section>
+    <h2>خدماتنا</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>الشلل الدماغي</h3>
+        <p>برامج علاجية فردية لتحسين التحكم الحركي والوظائف اليومية.</p>
+      </div>
+
+      <div class="card">
+        <h3>تأخر النمو الحركي</h3>
+        <p>تقييم مبكر وتدخل علاجي لدعم التطور الحركي الطبيعي.</p>
+      </div>
+
+      <div class="card">
+        <h3>تدريب المشي</h3>
+        <p>تحسين نمط المشي باستخدام تمارين وأدوات تأهيل متقدمة.</p>
+      </div>
+
+      <div class="card">
+        <h3>التوازن والتنسيق</h3>
+        <p>تمارين خاصة لتعزيز التوازن والتحكم الجسدي.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About preview -->
+  <section>
+    <h2>من نحن</h2>
+    <div class="about">
+      <p>
+        PhysioChild منصة متخصصة في العلاج الفيزيائي للأطفال،
+        نعمل بروح إنسانية ونهج علمي لمساعدة الأطفال
+        على تحقيق أفضل قدراتهم الحركية.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 PhysioChild – All Rights Reserved
+  </footer>
 
 </body>
 </html>
