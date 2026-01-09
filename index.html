@@ -2,187 +2,25 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>PhysioChild | Pediatric Physiotherapy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Font: Tajawal -->
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Tajawal', sans-serif;
-      background-color: #F7F9FB;
-      color: #2E2E2E;
-      line-height: 1.8;
-    }
-
-    header {
-      background: linear-gradient(135deg, #2FB7C4, #2C7BE5);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    nav {
-      background-color: white;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #2C7BE5;
-      font-weight: 500;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      color: #2FB7C4;
-      font-size: 28px;
-      margin-bottom: 40px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background-color: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      color: #2C7BE5;
-      margin-bottom: 10px;
-    }
-
-    .about {
-      background-color: #ffffff;
-      border-radius: 16px;
-      padding: 40px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 30px;
-      background-color: #6BCF9B;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
-    }
-
-    footer {
-      background-color: #2E2E2E;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+  <title>PhysioChild | الرئيسية</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>PhysioChild</h1>
-    <p>
-      تدريب وظيفي متخصص في العلاج الفيزيائي 
-      لأطفال الشلل الدماغي - Cerebral Palsy  
-        لمساعدتهم على الحركة، الاستقلال،
-         وجودة حياة أفضل
-    </p>
-  </header>
+<nav class="navbar">
+  <div class="logo">PhysioChild</div>
+  <ul class="nav-links">
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="services.html">خدماتنا</a></li>
+    <li><a href="about.html">من نحن</a></li>
+    <li><a href="contact.html">تواصل</a></li>
+  </ul>
+</nav>
 
-  <nav>
-    <a href="#home">الرئيسية</a>
-    <a href="#services">الخدمات</a>
-    <a href="#about">من انا</a>
-    <a href="#contact">تواصل معي</a>
-  </nav>
-
-  <section id="services">
-    <h2>الخدمات</h2>
-    <div class="services">
-      <div class="card">
-        <h3>تأهيل الشلل الدماغي</h3>
-        <p>برامج علاجية مخصصة لتحسين التحكم الحركي والاستقلال الوظيفي.</p>
-      </div>
-      <div class="card">
-        <h3>نقص الأكسجة</h3>
-        <p>خطط تأهيل وظيفي لتحسين القوة والتوازن والوظيفة.</p>
-      </div>
-      <div class="card">
-        <h3>تأخر النمو الحركي</h3>
-        <p>تقييم وتدخل مبكر لدعم التطور الروحي الحركي للطفل.</p>
-      </div>
-      <div class="card">
-        <h3>تدريب المشي والتوازن</h3>
-        <p>برامج متقدمة لتطوير نمط المشي باستخدام وسائل مساعدة.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>من انا</h2>
-    <div class="about">
-      <p>
-        رزان الموسى: اخصائية معالجة فيزيائية أقدم منصة PhysioChild المتخصصة في العلاج الفيزيائي للأطفال،  
-        أؤمن بأن كل طفل يستحق فرصة للحركة بحرية وبناء صلة جسدية وعاطفية مع المجتمع.
-      </p>
-      <p>
-        أعمل بخطط علاجية علمية، إنسانية، ومبنية على أحدث الممارسات  
-        مع إشراك الأسرة في كل خطوة من رحلة التأهيل.
-      </p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>تواصل معي</h2>
-    <div class="contact">
-      <p>للاستفسار أو الاستشارة، يسعدني تواصلك معي</p>
-      <a href="mailto:info@physiochild.org">info@physiochild.org</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 PhysioChild – All Rights Reserved
-  </footer>
+<section class="hero">
+  <h1>رعاية متخصصة للأطفال</h1>
+  <p>نساعد طفلك على الحركة والاستقلالية بثقة وأمان</p>
+</section>
 
 </body>
 </html>
