@@ -7,14 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+
     body {
-      background: #fff;
-      border-radius: 30px;
-      padding: 60px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
+      background: #f4fbfb;
+      color: #6c9fa4;
+      line-height: 1.8;
     }
 
     .about-text {
@@ -34,25 +38,25 @@
     }
 
     nav {
-      background-color: #ffffff;
-      padding: 15px 30px;
+      background: #2C7BE5;
+      padding: 15px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
     }
 
     nav .logo {
       font-size: 22px;
       font-weight: 700;
       color: #2C7BE5;
-    }
-
-    nav a {
-      text-decoration: none;
-      margin-left: 20px;
-      color: #2C7BE5;
-      font-weight: 500;
     }
 
     header {
@@ -83,11 +87,28 @@
     }
 
     .about-box {
-      background-color: white;
-      padding: 45px;
-      border-radius: 18px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      text-align: center;
+      background: #fff;
+      border-radius: 30px;
+      padding: 60px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #2C7BE5;
+    }
+
+    .about img {
+      max-width: 380px;
+      width: 100%;
     }
 
     footer {
@@ -129,7 +150,7 @@
         الممارسات مع إشراك الاهل في كل خطوة من رحلة التأهيل.
       </p>
     </div>
-    <img src="image/about.jpg" style="width:120px; height:auto;">
+    <img src="image/about.jpg"
   </section>
 
   <!-- Footer -->
