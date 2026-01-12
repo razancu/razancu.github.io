@@ -7,8 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
-    <style>
-    * {
+     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -17,40 +16,17 @@
 
     body {
       background: #f4fbfb;
-      color: #6c9fa4;
+      color: #1f4f55;
       line-height: 1.8;
     }
 
-    .about-text {
-      flex: 1;
-    }
-
-    .about-text h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-      color: #2C7BE5;
-    }
-
-    .about img {
-      max-width: 380px;
-      width: 100%;
-    }
-    }
-
     nav {
-      background: #2C7BE5;
-      padding: 15px 8%;
+      background-color: #ffffff;
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 600;
-    }
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     nav .logo {
@@ -59,57 +35,79 @@
       color: #2C7BE5;
     }
 
+    nav a {
+      text-decoration: none;
+      margin-left: 20px;
+      color: #2C7BE5;
+      font-weight: 500;
+    }
+
     header {
       background: linear-gradient(135deg, #2FB7C4, #2C7BE5);
       color: white;
       padding: 60px 20px;
       text-align: center;
     }
+    .about-card {
+  max-width: 420px;
+  margin: 60px auto;
+  background-color: #F7F9FB;
+  border-radius: 28px;
+  padding: 40px 25px;
+  text-align: center;
+}
 
-    section {
-      padding: 80px 8%;
-    }
+/* النص */
+.about-text {
+  color: #7A9AA0;
+  font-size: 16px;
+  line-height: 1.9;
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+.about-text .name {
+  font-weight: 600;
+  color: #6F9FA6;
+  margin-bottom: 20px;
+}
 
-    .section-title h2 {
-      font-size: 36px;
-      color: #2C7BE5;
-    }
+/* الصورة */
+.about-image {
+  margin-top: 35px;
+}
 
-    .section-title p {
-      max-width: 600px;
-      margin: 10px auto;
-      color: #6c9fa4;
-    }
+.about-image img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+  <style>
+  
+/* ===== Sections ===== */
+    <section class="about-card">
+  <div class="about-text">
+    <p class="name">رزان الموسى: أخصائية معالجة فيزيائية</p>
 
-    .about-box {
-      background: #fff;
-      border-radius: 30px;
-      padding: 60px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
+    <p>
+      PhysioChild منصة أقدم من خلالها العلاج الفيزيائي للأطفال
+    </p>
 
-    .about-text {
-      flex: 1;
-    }
+    <p>
+      أؤمن بأن كل طفل يستحق فرصة للحركة بحرية وبناء صلة جسدية
+      وعاطفية مع المجتمع.
+    </p>
 
-    .about-text h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-      color: #2C7BE5;
-    }
+    <p>
+      أعمل بخطط علاجية علمية، إنسانية ومبنية على أحدث الممارسات
+      مع إشراك الأهل في كل خطوة من رحلة التأهيل.
+    </p>
+  </div>
 
-    .about img {
-      max-width: 380px;
-      width: 100%;
-    }
+  <div class="about-image">
+    <img src="images/about.jpg" alt="من انا">
+  </div>
+</section>
 
     footer {
       background-color: #2E2E2E;
